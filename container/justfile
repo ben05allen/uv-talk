@@ -1,0 +1,13 @@
+alias b := build
+alias r := run
+
+image := "img-uv-talk"
+tag := "build-tag-dev"
+
+target := image + ":" + tag
+
+build:
+    docker build -t {{target}} .
+
+run: 
+    docker run {{target}}
