@@ -8,8 +8,7 @@ COPY --from=ghcr.io/astral-sh/uv:latest /uv /bin/uv
 
 # update container
 RUN apt-get update \
-    && apt-get upgrade -y \
-    && apt-get clean \
+    && apt-get dist-upgrade -y \
     && rm -rf /var/lib/apt/lists/*
 
 # switch to non-root user
