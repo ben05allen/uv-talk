@@ -1,4 +1,5 @@
 FROM debian:12
+# FROM 3-slim-bullseye
 ENV DEBIAN_FRONTEND=noninteractive
 
 # copy in uv binary
