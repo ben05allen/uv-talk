@@ -1,7 +1,7 @@
 [project]
 name = "uv-talk"
 description = "A talk about uv"
-version = "2024.10"
+version = "2025.1"
 authors = [{name = "Benjamin Allen", email = "ben05allen@hotmail.com"}]
 license = {text = "MIT License"}
 readme = "README.md"

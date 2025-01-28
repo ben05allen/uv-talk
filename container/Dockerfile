@@ -1,10 +1,8 @@
 FROM debian:12
-# FROM 3-slim-bullseye
 ENV DEBIAN_FRONTEND=noninteractive
+# note -  there is currently no Python installed
 
 # copy in uv binary
-# Note: there is currently no Python installed
-# but doesn't currently work for musl-based distros, such as Alpine
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /bin/uv
 
 # update container
